@@ -19,11 +19,11 @@
         filled
         type="number"
         v-model="age"
-        label="Your age *"
+        label="你的年龄 *"
         lazy-rules
         :rules="[
-          val => val !== null && val !== '' || 'Please type your age',
-          val => val > 0 && val < 100 || 'Please type a real age'
+          val => val !== null && val !== '' || '请输入您的年龄',
+          val => val > 0 && val < 100 || '请输入真实年龄'
         ]"
       />
 
